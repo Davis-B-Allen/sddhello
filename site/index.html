@@ -100,9 +100,10 @@
     <section id="getting-started">
       <h2>Getting Started</h2>
       <p>
-        Follow these five steps to go from zero to a working development
-        environment in your browser. Each step explains what you're doing and
-        why, so you can follow along confidently even if this is all new to you.
+        Follow these steps to go from zero to a working development
+        environment — and a live website — right in your browser. Each step
+        explains what you're doing and why, so you can follow along confidently
+        even if this is all new to you.
       </p>
 
       <ol>
@@ -137,25 +138,18 @@
         </li>
 
         <li>
-          <strong>Contact the project owner for repository access</strong>
-          <p>
-            This project's code lives in a private repository (a private
-            collection of files on GitHub). Because it's private, you need to
-            be invited as a collaborator before you can make your own copy.
-            Reach out to the person who shared this page with you and let them
-            know your GitHub username — they'll add you to the project.
-          </p>
-        </li>
-
-        <li>
           <strong>Fork the repository</strong>
           <p>
             "Forking" means creating your own personal copy of the project on
             GitHub. This gives you a safe space to experiment and make changes
-            without affecting the original. Once you've been added as a
-            collaborator (step 3), visit the project's repository page on GitHub
-            and click the <strong>Fork</strong> button near the top right of the
-            page. Follow the prompts to create your fork.
+            without affecting the original. Visit the project's repository page
+            on GitHub and click the <strong>Fork</strong> button near the top
+            right of the page. Follow the prompts to create your fork.
+          </p>
+          <p>
+            <a href="https://github.com/Davis-B-Allen/sddhello" target="_blank" rel="noopener noreferrer">
+              Go to the repository on GitHub →
+            </a>
           </p>
         </li>
 
@@ -169,6 +163,64 @@
             <strong>Create codespace on main</strong>. After a minute or two,
             a fully configured editor will open in your browser — you're ready
             to start building!
+          </p>
+        </li>
+
+        <li>
+          <strong>Preview the site locally</strong>
+          <p>
+            Let's make sure the site works before you change anything. Open the
+            terminal in VS Code
+            (<strong>Terminal → New Terminal</strong>, or press
+            <code>Ctrl+`</code>) and run:
+          </p>
+          <pre><code>npx serve site -p 8080</code></pre>
+          <p>
+            In a Codespace, a notification will pop up saying
+            <em>"Your application running on port 8080 is available."</em>
+            Click <strong>Open in Browser</strong> to see the site. You can also
+            open the <strong>Ports</strong> panel (in the bottom bar) and click
+            the globe icon next to port 8080.
+          </p>
+          <p>
+            <em>
+              <strong>Note:</strong> If you're developing locally (not in a
+              Codespace), open
+              <a href="http://localhost:8080" target="_blank" rel="noopener noreferrer">http://localhost:8080</a>
+              directly in your browser after running the serve command.
+            </em>
+          </p>
+        </li>
+
+        <li>
+          <strong>Publish your site with GitHub Pages</strong>
+          <p>
+            Your fork already includes a workflow file that can publish the site
+            to the web automatically. You just need to enable it:
+          </p>
+          <ol>
+            <li>
+              In your fork on GitHub, go to the <strong>Actions</strong> tab.
+              If prompted, click
+              <strong>"I understand my workflows, go ahead and enable them"</strong>.
+            </li>
+            <li>
+              Go to <strong>Settings → Pages</strong> (in the left sidebar under
+              "Code and automation").
+            </li>
+            <li>
+              Under <strong>Build and deployment</strong>, set
+              <strong>Source</strong> to <strong>GitHub Actions</strong>.
+            </li>
+            <li>
+              Push a commit to <code>main</code> (or click
+              <strong>"Run workflow"</strong> on the Actions tab) to trigger
+              deployment.
+            </li>
+          </ol>
+          <p>
+            After a few minutes, your site will be live at
+            <code>https://&lt;your-username&gt;.github.io/&lt;your-repo&gt;/</code>.
           </p>
         </li>
       </ol>
