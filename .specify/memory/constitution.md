@@ -1,50 +1,103 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+  Sync Impact Report
+  Version: 1.0.0 (initial draft, pre-ratification)
+  Added sections: Core Principles (5), Technology Stack, Development Workflow, Governance
+  Templates requiring updates: ✅ No updates needed (templates are generic)
+  Follow-up TODOs: None
+-->
+
+# SDD Hello Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Simplicity-First
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+This project MUST remain a simple, static, single-page website.
+No server-side logic, databases, or complex build pipelines.
+The site MUST be viewable by opening an HTML file directly or via
+a trivial static file server (e.g. `npx serve`). Every feature
+addition MUST justify its complexity — prefer plain HTML/CSS/JS
+over frameworks unless a clear, documented need arises.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### II. Novice-Accessible
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+All tooling, documentation, and workflow choices MUST prioritize
+accessibility for non-technical contributors. Instructions MUST
+assume zero prior development experience. Jargon MUST be defined
+on first use. The "Get Started" guide on the site MUST be
+end-to-end testable by someone with no coding background using
+only a browser and a GitHub account.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### III. Spec-Driven Development
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+All non-trivial changes MUST follow the spec-driven development
+workflow using GitHub spec-kit. The project is bootstrapped once
+with the `specify init` CLI; ongoing development uses `/speckit.*`
+slash commands inside the AI agent (Copilot agent mode):
+1. `/speckit.specify` — write or update a specification.
+2. `/speckit.clarify` — clarify underspecified areas (optional).
+3. `/speckit.plan` — derive a technical implementation plan.
+4. `/speckit.tasks` — generate an actionable task list.
+5. `/speckit.implement` — execute tasks per the plan.
+Skipping the spec step is only acceptable for typo fixes,
+formatting, or single-line content corrections.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### IV. Devcontainer & Codespaces as the Primary Environment
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+The canonical development environment is the project devcontainer
+running in GitHub Codespaces. All setup instructions, scripts,
+and tooling MUST work inside this environment without additional
+manual configuration. Contributors SHOULD NOT need to install
+anything locally.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### V. Iterative & Incremental
+
+Deliver working increments. Each feature branch SHOULD produce a
+deployable (or at least previewable) improvement to the site.
+Avoid large, multi-feature branches. Prefer small pull requests
+that can be reviewed and merged independently.
+
+## Technology Stack
+
+- **Runtime**: Node.js (as provided by the devcontainer image)
+- **Languages**: HTML, CSS, JavaScript (vanilla to start)
+- **Hosting**: Static files only — no server-side rendering
+- **Dev environment**: VS Code devcontainer (Node.js base image),
+  GitHub Codespaces
+- **AI tooling**: GitHub Copilot (agent mode)
+- **SDD tooling**: GitHub spec-kit — bootstrapped via `specify`
+  CLI; day-to-day workflow via `/speckit.*` slash commands in
+  agent mode
+- **Version control**: Git, hosted on GitHub
+
+Introducing a new dependency or build tool MUST be justified in a
+spec and approved before implementation.
+
+## Development Workflow
+
+1. **Branch**: Create a feature branch from `main`.
+2. **Specify**: In Copilot agent mode, use `/speckit.specify`,
+   `/speckit.plan`, and `/speckit.tasks` to draft specs, plans,
+   and tasks for the change.
+3. **Implement**: Use `/speckit.implement` (or work through tasks
+   manually) in Copilot agent mode.
+4. **Preview**: Start a local static server, verify via the
+   Codespaces Ports tab.
+5. **Commit & PR**: Push the branch and open a pull request.
+6. **Review**: Ensure the PR aligns with the spec and this
+   constitution.
+7. **Merge**: Squash-merge into `main`.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution is the highest-authority document for project
+decisions. All specifications, plans, and pull requests MUST be
+consistent with these principles.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+Amendments to this constitution MUST be proposed via a spec-kit
+specification, reviewed, and merged through the standard PR
+process. Each amendment MUST include a version bump following
+semantic versioning (MAJOR for principle removals/redefinitions,
+MINOR for additions, PATCH for clarifications).
+
+**Version**: 1.0.0 | **Ratified**: 2026-03-01 | **Last Amended**: 2026-03-01
