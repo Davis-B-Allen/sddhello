@@ -1,0 +1,216 @@
+/* ── Custom Properties ── */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-accent: #0969da;
+  --color-accent-hover: #0550ae;
+  --color-surface: #f6f8fa;
+  --color-border: #d0d7de;
+  --color-muted: #57606a;
+  --font-body: system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, 'Cascadia Code', 'Consolas', monospace;
+  --max-width: 42rem;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+}
+
+/* ── Reset ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ── Base Layout (mobile-first, 375px+) ── */
+header,
+main,
+footer {
+  padding: var(--space-md);
+}
+
+header {
+  text-align: center;
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-lg);
+}
+
+header h1 {
+  margin: 0 0 var(--space-sm);
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+header p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 1.1rem;
+}
+
+section {
+  margin-bottom: var(--space-xl);
+}
+
+section h2 {
+  font-size: 1.4rem;
+  margin: 0 0 var(--space-md);
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px solid var(--color-border);
+}
+
+section h3 {
+  font-size: 1.15rem;
+  margin: var(--space-lg) 0 var(--space-sm);
+}
+
+p {
+  margin: 0 0 var(--space-md);
+}
+
+footer {
+  text-align: center;
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--color-border);
+}
+
+/* ── Links ── */
+a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-accent-hover);
+}
+
+/* ── Lists ── */
+ol {
+  padding-left: var(--space-lg);
+  margin: 0 0 var(--space-md);
+}
+
+ol li {
+  margin-bottom: var(--space-md);
+  padding-left: var(--space-sm);
+}
+
+ol li strong {
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
+ul {
+  padding-left: var(--space-lg);
+  margin: 0 0 var(--space-md);
+}
+
+ul li {
+  margin-bottom: var(--space-sm);
+}
+
+/* ── Code Block with Copy Button ── */
+.code-block {
+  position: relative;
+  margin: var(--space-md) 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.code-block pre {
+  margin: 0;
+  padding: var(--space-md);
+  padding-top: var(--space-xl);
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.code-block code {
+  font-family: inherit;
+}
+
+.copy-btn {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  padding: var(--space-xs) var(--space-sm);
+  font-size: 0.8rem;
+  font-family: var(--font-body);
+  color: var(--color-muted);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.copy-btn:hover,
+.copy-btn:focus {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+/* ── Responsive: Tablets and Up ── */
+@media (min-width: 768px) {
+  header,
+  main,
+  footer {
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+  }
+
+  header {
+    padding-top: calc(var(--space-xl) * 1.5);
+    padding-bottom: var(--space-xl);
+  }
+
+  header h1 {
+    font-size: 2.25rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+
+  section h2 {
+    font-size: 1.65rem;
+  }
+
+  section h3 {
+    font-size: 1.25rem;
+  }
+
+  section {
+    margin-bottom: calc(var(--space-xl) * 1.25);
+  }
+}

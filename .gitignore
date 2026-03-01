@@ -1,0 +1,19 @@
+# === OS ===
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+
+# === Editor ===
+.vscode/
+.idea/
+
+# === Node.js (for npx serve / dev tools) ===
+node_modules/
+*.log
+npm-debug.log*
+
+# === Environment ===
+.env
+.env.*
+!.env.example

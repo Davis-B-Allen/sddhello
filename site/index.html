@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get Started with AI-Assisted Development</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Get Started with AI-Assisted Development</h1>
+    <p>A practical, hands-on guide to building software with an AI at your side.</p>
+  </header>
+
+  <main>
+
+    <section id="what-is-this">
+      <h2>What is this?</h2>
+      <p>
+        This site is a practical, hands-on guide designed to help you — someone
+        who may have little or no experience with software development — get set
+        up with modern tools for building software alongside an AI assistant.
+      </p>
+      <p>
+        The idea is ambitious but achievable: you're going to learn how to build
+        real applications, and you won't be doing it alone. You'll have
+        <strong>GitHub Copilot</strong> — an AI-powered coding assistant — working
+        right beside you, ready to write code, explain concepts, and guide you
+        through every step.
+      </p>
+      <p>
+        This guide follows a <strong>"learn by making"</strong> philosophy. Rather
+        than reading a textbook cover to cover before writing a single line of code,
+        you'll jump in, get your hands dirty, and learn as you go. When you hit
+        something you don't understand, you'll have your AI assistant right there
+        to explain it. The best way to learn is by doing — and with AI as your
+        partner, you can start doing interesting things right away.
+      </p>
+      <p>
+        Ready? Let's get you set up.
+      </p>
+    </section>
+
+    <section id="concepts">
+      <h2>Key Concepts</h2>
+      <p>
+        Before you dive into the setup steps, here's a quick introduction to the
+        tools and ideas you'll be working with. Don't worry about memorizing
+        anything — you'll learn more about each of these as you use them.
+      </p>
+
+      <h3>GitHub Codespaces</h3>
+      <p>
+        A <strong>Codespace</strong> is a complete development environment that
+        runs in your web browser. Instead of installing complicated software on
+        your computer, you click a button and get a fully configured workspace
+        in the cloud — ready to code in seconds. Think of it as a virtual
+        computer that's already set up with everything you need for this project.
+      </p>
+      <p>
+        <a href="https://docs.github.com/en/codespaces" target="_blank" rel="noopener noreferrer">
+          Learn more about GitHub Codespaces →
+        </a>
+      </p>
+
+      <h3>GitHub Copilot &amp; AI Agents</h3>
+      <p>
+        <strong>GitHub Copilot</strong> is an AI assistant that lives inside your
+        development environment. You can talk to it in plain English — ask it to
+        write code, explain how something works, fix a bug, or help you plan a
+        feature. When you use Copilot in <strong>agent mode</strong>, it can take
+        on bigger tasks: reading your project files, running commands, and making
+        changes across multiple files on your behalf.
+      </p>
+      <p>
+        <a href="https://docs.github.com/en/copilot" target="_blank" rel="noopener noreferrer">
+          Learn more about GitHub Copilot →
+        </a>
+      </p>
+
+      <h3>Spec-Driven Development &amp; spec-kit</h3>
+      <p>
+        <strong>Spec-Driven Development (SDD)</strong> is a structured way to
+        build software. Instead of jumping straight into code, you start by
+        writing a clear description of <em>what</em> you want to build — called
+        a <strong>specification</strong>. Then you plan, break the work into tasks,
+        and implement step-by-step. <strong>spec-kit</strong> is a toolkit from
+        GitHub that helps you follow this process with AI. You'll use simple
+        slash commands like <code>/speckit.specify</code> and
+        <code>/speckit.plan</code> to guide your AI assistant through each stage.
+      </p>
+      <p>
+        <a href="https://github.com/github/spec-kit" target="_blank" rel="noopener noreferrer">
+          Learn more about spec-kit →
+        </a>
+      </p>
+    </section>
+
+    <section id="getting-started">
+      <h2>Getting Started</h2>
+      <p>
+        Follow these five steps to go from zero to a working development
+        environment in your browser. Each step explains what you're doing and
+        why, so you can follow along confidently even if this is all new to you.
+      </p>
+
+      <ol>
+        <li>
+          <strong>Create a GitHub account</strong>
+          <p>
+            GitHub is a platform where developers store and collaborate on code.
+            You'll need a free account to access the project and use the tools
+            described on this page. If you already have an account, skip ahead
+            to step 2.
+          </p>
+          <p>
+            <a href="https://github.com/signup" target="_blank" rel="noopener noreferrer">
+              Sign up for GitHub →
+            </a>
+          </p>
+        </li>
+
+        <li>
+          <strong>Sign up for the GitHub Copilot Pro free trial</strong>
+          <p>
+            Copilot Pro gives you access to the AI assistant that will help you
+            write code and learn as you go. GitHub offers a free 30-day trial,
+            so you can get started without any cost. You'll need your GitHub
+            account from step 1.
+          </p>
+          <p>
+            <a href="https://github.com/github-copilot/signup" target="_blank" rel="noopener noreferrer">
+              Start your free Copilot Pro trial →
+            </a>
+          </p>
+        </li>
+
+        <li>
+          <strong>Contact the project owner for repository access</strong>
+          <p>
+            This project's code lives in a private repository (a private
+            collection of files on GitHub). Because it's private, you need to
+            be invited as a collaborator before you can make your own copy.
+            Reach out to the person who shared this page with you and let them
+            know your GitHub username — they'll add you to the project.
+          </p>
+        </li>
+
+        <li>
+          <strong>Fork the repository</strong>
+          <p>
+            "Forking" means creating your own personal copy of the project on
+            GitHub. This gives you a safe space to experiment and make changes
+            without affecting the original. Once you've been added as a
+            collaborator (step 3), visit the project's repository page on GitHub
+            and click the <strong>Fork</strong> button near the top right of the
+            page. Follow the prompts to create your fork.
+          </p>
+        </li>
+
+        <li>
+          <strong>Open your fork in GitHub Codespaces</strong>
+          <p>
+            Now it's time to open your development environment. Go to
+            <em>your fork</em> of the repository on GitHub (not the original).
+            Click the green <strong>&lt;&gt; Code</strong> button, select the
+            <strong>Codespaces</strong> tab, and click
+            <strong>Create codespace on main</strong>. After a minute or two,
+            a fully configured editor will open in your browser — you're ready
+            to start building!
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="next-steps">
+      <h2>Next Steps</h2>
+      <p>
+        Now that you have your development environment running, it's time to
+        build something! Here's a suggested first feature to tackle using the
+        spec-driven development workflow.
+      </p>
+
+      <h3>Suggested Feature: Expand the Site with Concept Pages</h3>
+      <p>
+        Right now, this is a single page. A great next step would be to expand
+        it into a multi-page site with a dedicated "Concepts" section — individual
+        pages that explain the key topics you'll encounter on your journey:
+      </p>
+      <ul>
+        <li>Git &amp; version control</li>
+        <li>GitHub</li>
+        <li>GitHub Copilot &amp; AI agents</li>
+        <li>Spec-Driven Development &amp; spec-kit</li>
+        <li>Devcontainers</li>
+        <li>GitHub Codespaces</li>
+        <li>GitHub Pages (for publishing your site to the web)</li>
+      </ul>
+      <p>
+        You don't need to be an expert on these topics — that's what your AI
+        assistant is for! You'll use spec-kit slash commands to guide the process:
+      </p>
+      <ol>
+        <li><code>/speckit.specify</code> — describe what you want to build</li>
+        <li><code>/speckit.plan</code> — create a technical plan</li>
+        <li><code>/speckit.tasks</code> — break the plan into tasks</li>
+        <li><code>/speckit.implement</code> — build it step by step</li>
+      </ol>
+
+      <h3>Ready-to-Use Command</h3>
+      <p>
+        To get started, copy the prompt below and paste it into your AI agent's
+        chat. This will kick off the specification step for the Concepts pages
+        feature:
+      </p>
+      <div class="code-block">
+        <button class="copy-btn" type="button" aria-label="Copy command to clipboard">Copy</button>
+        <pre><code>/speckit.specify
+
+I'd like to add a "Concepts" section to the site. This would expand the current single-page site into a multi-page site with individual pages for key topics. Each concept page should provide a beginner-friendly explanation of the topic, written for someone with no technical background.
+
+Topics to cover (each gets its own page):
+- Git &amp; version control
+- GitHub
+- GitHub Copilot &amp; AI agents
+- Spec-Driven Development &amp; spec-kit
+- Devcontainers
+- GitHub Codespaces
+- GitHub Pages (publishing a site to the web)
+
+Each page should:
+- Explain the concept in plain language using second-person voice ("you")
+- Include at least one practical example or analogy
+- Link to official documentation or a reputable external reference
+- Include a "back to home" link to return to the main page
+
+The main page (index.html) should be updated with a navigation section or links to each concept page.</code></pre>
+      </div>
+
+      <h3>A Tip: Ask Mode</h3>
+      <p>
+        If you run into something you don't understand — a term, a concept, an
+        error message, anything at all — you can switch your AI agent to
+        <strong>"ask" mode</strong> at any time. Just type your question in
+        plain English and it will explain things for you. There are no silly
+        questions — that's exactly what your AI assistant is there for.
+      </p>
+    </section>
+
+    <section id="reference-links">
+      <h2>Reference Links</h2>
+      <p>
+        Here's a consolidated list of the key resources mentioned throughout this
+        page, plus a few extras. Bookmark this section for quick reference.
+      </p>
+      <ul>
+        <li>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+          — The platform where your code lives and where you'll collaborate.
+        </li>
+        <li>
+          <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a>
+          — Your AI-powered coding assistant.
+        </li>
+        <li>
+          <a href="https://github.com/features/codespaces" target="_blank" rel="noopener noreferrer">GitHub Codespaces</a>
+          — Cloud development environments that run in your browser.
+        </li>
+        <li>
+          <a href="https://github.com/github/spec-kit" target="_blank" rel="noopener noreferrer">spec-kit</a>
+          — The toolkit for spec-driven development with AI.
+        </li>
+        <li>
+          <a href="https://docs.github.com/en/codespaces" target="_blank" rel="noopener noreferrer">GitHub Codespaces Documentation</a>
+          — Official docs for getting started with Codespaces.
+        </li>
+        <li>
+          <a href="https://docs.github.com/en/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot Documentation</a>
+          — Official docs for Copilot features and setup.
+        </li>
+        <li>
+          <a href="https://docs.github.com/en/get-started" target="_blank" rel="noopener noreferrer">GitHub Get Started Guide</a>
+          — A beginner-friendly introduction to GitHub itself.
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Built with curiosity and a little help from AI.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.copy-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var code = btn.closest('.code-block').querySelector('code').textContent;
+        navigator.clipboard.writeText(code).then(function () {
+          btn.textContent = 'Copied!';
+          setTimeout(function () {
+            btn.textContent = 'Copy';
+          }, 2000);
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
