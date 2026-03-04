@@ -5,7 +5,8 @@ Thumbs.db
 *.swp
 
 # === Editor ===
-.vscode/
+.vscode/*
+!.vscode/settings.json
 .idea/
 
 # === Node.js (for npx serve / dev tools) ===

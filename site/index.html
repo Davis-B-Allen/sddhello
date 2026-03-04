@@ -42,188 +42,315 @@
       </p>
     </section>
 
-    <section id="concepts">
-      <h2>Key Concepts</h2>
+    <section id="step-1">
+      <h2>Step 1: Create a GitHub account</h2>
       <p>
-        Before you dive into the setup steps, here's a quick introduction to the
-        tools and ideas you'll be working with. Don't worry about memorizing
-        anything — you'll learn more about each of these as you use them.
-      </p>
-
-      <h3>GitHub Codespaces</h3>
-      <p>
-        A <strong>Codespace</strong> is a complete development environment that
-        runs in your web browser. Instead of installing complicated software on
-        your computer, you click a button and get a fully configured workspace
-        in the cloud — ready to code in seconds. Think of it as a virtual
-        computer that's already set up with everything you need for this project.
+        GitHub is a platform where developers store and collaborate on code.
+        You'll need a free account to access the project and use the tools
+        described on this page. If you already have an account, skip ahead
+        to Step 2.
       </p>
       <p>
-        <a href="https://docs.github.com/en/codespaces" target="_blank" rel="noopener noreferrer">
-          Learn more about GitHub Codespaces →
-        </a>
-      </p>
-
-      <h3>GitHub Copilot &amp; AI Agents</h3>
-      <p>
-        <strong>GitHub Copilot</strong> is an AI assistant that lives inside your
-        development environment. You can talk to it in plain English — ask it to
-        write code, explain how something works, fix a bug, or help you plan a
-        feature. When you use Copilot in <strong>agent mode</strong>, it can take
-        on bigger tasks: reading your project files, running commands, and making
-        changes across multiple files on your behalf.
-      </p>
-      <p>
-        <a href="https://docs.github.com/en/copilot" target="_blank" rel="noopener noreferrer">
-          Learn more about GitHub Copilot →
-        </a>
-      </p>
-
-      <h3>Spec-Driven Development &amp; spec-kit</h3>
-      <p>
-        <strong>Spec-Driven Development (SDD)</strong> is a structured way to
-        build software. Instead of jumping straight into code, you start by
-        writing a clear description of <em>what</em> you want to build — called
-        a <strong>specification</strong>. Then you plan, break the work into tasks,
-        and implement step-by-step. <strong>spec-kit</strong> is a toolkit from
-        GitHub that helps you follow this process with AI. You'll use simple
-        slash commands like <code>/speckit.specify</code> and
-        <code>/speckit.plan</code> to guide your AI assistant through each stage.
-      </p>
-      <p>
-        <a href="https://github.com/github/spec-kit" target="_blank" rel="noopener noreferrer">
-          Learn more about spec-kit →
+        <a href="https://github.com/signup" target="_blank" rel="noopener noreferrer">
+          Sign up for GitHub →
         </a>
       </p>
     </section>
 
-    <section id="getting-started">
-      <h2>Getting Started</h2>
+    <section id="step-2">
+      <h2>Step 2: Sign up for the GitHub Copilot Pro free trial</h2>
       <p>
-        Follow these steps to go from zero to a working development
-        environment — and a live website — right in your browser. Each step
-        explains what you're doing and why, so you can follow along confidently
-        even if this is all new to you.
+        Copilot Pro gives you access to the AI assistant that will help you
+        write code and learn as you go. GitHub offers a free 30-day trial,
+        so you can get started without any cost. You'll need your GitHub
+        account from Step 1.
       </p>
+      <p>
+        <a href="https://github.com/github-copilot/signup" target="_blank" rel="noopener noreferrer">
+          Start your free Copilot Pro trial →
+        </a>
+      </p>
+    </section>
 
+    <section id="step-3">
+      <h2>Step 3: Meet your AI assistant</h2>
+      <p>
+        Now that you have a GitHub account and a Copilot Pro subscription,
+        you have access to your very own AI assistant:
+        <strong>GitHub Copilot</strong>. Think of it as a knowledgeable friend
+        who's always available to answer questions, explain concepts, and help
+        you figure things out — right in your browser.
+      </p>
+      <p>
+        To chat with your Copilot, open a new tab and go to
+        <a href="https://github.com/copilot" target="_blank" rel="noopener noreferrer">github.com/copilot</a>.
+        You'll see a chat interface where you can type messages in plain English.
+        This is called <strong>"Ask Mode"</strong> — you ask questions, and
+        Copilot answers them. Simple as that.
+      </p>
+      <p>
+        Here's the cool part: for the rest of this tutorial, you'll have your
+        Copilot open in a separate tab, ready to help whenever you need it. At
+        the start of each new step, you'll paste a short message into the chat
+        that tells Copilot which step you're on and points it at this tutorial's
+        code repository. That way, Copilot can read the tutorial itself and
+        understand exactly what you're working on. It's like giving your
+        assistant the same instruction manual you're reading.
+      </p>
+      <p>
+        One really neat thing: you can point Copilot at a GitHub repository
+        and it can actually read and understand the files inside it. The
+        repository for this tutorial is at
+        <a href="https://github.com/Davis-B-Allen/sddhello" target="_blank" rel="noopener noreferrer">github.com/Davis-B-Allen/sddhello</a>,
+        and the tutorial page lives in the <code>site/</code> folder. When you
+        share this link with Copilot, it'll be able to see the same content
+        you're reading right now.
+      </p>
+      <p>
+        Let's try it out! Copy the text block below and paste it into a new
+        chat with your Copilot at
+        <a href="https://github.com/copilot" target="_blank" rel="noopener noreferrer">github.com/copilot</a>.
+      </p>
+      <div class="code-block">
+        <button class="copy-btn" type="button" aria-label="Copy to clipboard">Copy</button>
+        <pre><code>I am following along with a tutorial on a website I found. The repo for the site can be found at https://github.com/Davis-B-Allen/sddhello and the page with the tutorial is found in the site/ folder. I am currently working through step 3. I'd like you to read the tutorial so you understand its context. And then, just so I know you've understood it, can you please tell me the name of the next step of the tutorial? Once you confirm that, I'll be ready to move on to the next step (since I know you'll be here to help me).</code></pre>
+      </div>
+      <p>
+        If your Copilot assistant confirmed that the next step is
+        <strong>"Step 4: Fork the repository"</strong>, you're ready to move
+        on. And your Copilot is ready to help you!
+      </p>
+      <p>
+        <em>
+          Don't worry if the wording isn't exact — as long as Copilot mentions
+          "Step 4" or "Fork the repository", it's understood the tutorial. If
+          something seems off, just try pasting the prompt again.
+        </em>
+      </p>
+    </section>
+
+    <section id="step-4">
+      <h2>Step 4: Fork the repository</h2>
+      <aside class="objectives" aria-label="Objectives for this step">
+        <p class="objectives-heading">Objectives for this step</p>
+        <ul>
+          <li>Create your own personal copy of the project on GitHub</li>
+          <li>Understand what "forking" means and why it's useful</li>
+        </ul>
+        <p class="keywords">
+          <strong>Topics you may need help with:</strong>
+          repository, fork, GitHub, personal copy, upstream
+        </p>
+      </aside>
+      <p>
+        Time to get your own copy of this project! In this step, you'll
+        "fork" the repository — which is just a fancy way of saying you'll
+        make your own personal copy of it on GitHub.
+      </p>
+      <p>
+        Copy the text block below and paste it into a new chat with your
+        GitHub Copilot assistant, in "Ask Mode". You can access your Copilot
+        at <a href="https://github.com/copilot" target="_blank" rel="noopener noreferrer">github.com/copilot</a>.
+      </p>
+      <div class="code-block">
+        <button class="copy-btn" type="button" aria-label="Copy to clipboard">Copy</button>
+        <pre><code>I am following along with a tutorial on a website I found. The repo for the site can be found at https://github.com/Davis-B-Allen/sddhello and the page with the tutorial is found in the site/ folder. I am about to start step 4 and I would like you to advise me if I get stuck or need help. So I'd like you to read the tutorial in full, and step 4 in particular, and await any questions I might have. Can you please do that?</code></pre>
+      </div>
+      <p>
+        So, what's a <strong>repository</strong>? It's basically a project
+        folder that lives on GitHub. It contains all the files, folders, and
+        history for a project. And <strong>forking</strong> means creating your
+        own copy of someone else's repository under your GitHub account. It's
+        like photocopying a recipe — you get your own version to modify however
+        you like, without changing the original.
+      </p>
+      <p>
+        Here's what to do: visit the project's repository page and click the
+        <strong>Fork</strong> button near the top right of the page. Follow
+        the prompts to create your fork.
+      </p>
+      <p>
+        <a href="https://github.com/Davis-B-Allen/sddhello" target="_blank" rel="noopener noreferrer">
+          Go to the repository on GitHub →
+        </a>
+      </p>
+      <p>
+        Once you've forked it, you'll have your very own copy at
+        <code>https://github.com/&lt;your-username&gt;/sddhello</code>. This
+        is where you'll do all your work — safe to experiment, break things,
+        and learn without worrying about messing up the original.
+      </p>
+    </section>
+
+    <section id="step-5">
+      <h2>Step 5: Open your fork in GitHub Codespaces</h2>
+      <aside class="objectives" aria-label="Objectives for this step">
+        <p class="objectives-heading">Objectives for this step</p>
+        <ul>
+          <li>Launch a cloud development environment from your fork</li>
+          <li>Get familiar with the VS Code editor in the browser</li>
+        </ul>
+        <p class="keywords">
+          <strong>Topics you may need help with:</strong>
+          Codespaces, cloud development environment, VS Code, browser IDE, devcontainer
+        </p>
+      </aside>
+      <p>
+        Now it's time to open up your development environment — the place
+        where you'll actually view and edit code. And the best part? It all
+        happens right in your browser.
+      </p>
+      <p>
+        Copy the text block below and paste it into a new chat with your
+        GitHub Copilot assistant, in "Ask Mode". You can access your Copilot
+        at <a href="https://github.com/copilot" target="_blank" rel="noopener noreferrer">github.com/copilot</a>.
+      </p>
+      <div class="code-block">
+        <button class="copy-btn" type="button" aria-label="Copy to clipboard">Copy</button>
+        <pre><code>I am following along with a tutorial on a website I found. The repo for the site can be found at https://github.com/Davis-B-Allen/sddhello and the page with the tutorial is found in the site/ folder. I am about to start step 5 and I would like you to advise me if I get stuck or need help. So I'd like you to read the tutorial in full, and step 5 in particular, and await any questions I might have. Can you please do that?</code></pre>
+      </div>
+      <p>
+        A <strong>Codespace</strong> is a complete development environment that
+        runs in the cloud — think of it as a virtual computer that's already
+        set up with everything you need for this project. Instead of installing
+        complicated software on your own computer, you just click a button and
+        get a ready-to-go workspace powered by <strong>VS Code</strong>, a
+        popular code editor.
+      </p>
+      <p>
+        Here's how to launch yours: go to <em>your fork</em> of the repository
+        on GitHub (not the original). Click the green
+        <strong>&lt;&gt; Code</strong> button, select the
+        <strong>Codespaces</strong> tab, and click
+        <strong>Create codespace on main</strong>. After a minute or two,
+        a fully configured editor will open in your browser — you're ready
+        to start building!
+      </p>
+    </section>
+
+    <section id="step-6">
+      <h2>Step 6: Preview the site locally</h2>
+      <aside class="objectives" aria-label="Objectives for this step">
+        <p class="objectives-heading">Objectives for this step</p>
+        <ul>
+          <li>Run a local web server to see the tutorial site in action</li>
+          <li>Understand how to use the terminal and preview tools</li>
+        </ul>
+        <p class="keywords">
+          <strong>Topics you may need help with:</strong>
+          terminal, local server, npx serve, port forwarding, preview
+        </p>
+      </aside>
+      <p>
+        Let's make sure everything is working! In this step, you'll fire up
+        a little web server and see this site running live in your browser.
+      </p>
+      <p>
+        Copy the text block below and paste it into a new chat with your
+        GitHub Copilot assistant, in "Ask Mode". You can access your Copilot
+        at <a href="https://github.com/copilot" target="_blank" rel="noopener noreferrer">github.com/copilot</a>.
+      </p>
+      <div class="code-block">
+        <button class="copy-btn" type="button" aria-label="Copy to clipboard">Copy</button>
+        <pre><code>I am following along with a tutorial on a website I found. The repo for the site can be found at https://github.com/Davis-B-Allen/sddhello and the page with the tutorial is found in the site/ folder. I am about to start step 6 and I would like you to advise me if I get stuck or need help. So I'd like you to read the tutorial in full, and step 6 in particular, and await any questions I might have. Can you please do that?</code></pre>
+      </div>
+      <p>
+        The <strong>terminal</strong> is like a text-based command center for
+        your computer (or in this case, your Codespace). Instead of clicking
+        buttons, you type commands to tell the computer what to do. Don't
+        worry — it's easier than it looks, and you only need one command right
+        now.
+      </p>
+      <p>
+        Open the terminal in VS Code
+        (<strong>Terminal → New Terminal</strong>, or press
+        <code>Ctrl+`</code>) and run:
+      </p>
+      <pre><code>npx serve site -p 8080</code></pre>
+      <p>
+        This starts a small <strong>local server</strong> — a program that
+        serves your website files so you can view them in a browser. In a
+        Codespace, a notification will pop up saying
+        <em>"Your application running on port 8080 is available."</em>
+        Click <strong>Open in Browser</strong> to see the site. You can also
+        open the <strong>Ports</strong> panel (in the bottom bar) and click
+        the globe icon next to port 8080.
+      </p>
+      <p>
+        <em>
+          <strong>Note:</strong> If you're developing locally (not in a
+          Codespace), open
+          <a href="http://localhost:8080" target="_blank" rel="noopener noreferrer">http://localhost:8080</a>
+          directly in your browser after running the serve command.
+        </em>
+      </p>
+    </section>
+
+    <section id="step-7">
+      <h2>Step 7: Publish your site with GitHub Pages</h2>
+      <aside class="objectives" aria-label="Objectives for this step">
+        <p class="objectives-heading">Objectives for this step</p>
+        <ul>
+          <li>Enable GitHub Pages on your fork</li>
+          <li>Deploy the site to a public URL</li>
+          <li>Understand the GitHub Actions workflow</li>
+        </ul>
+        <p class="keywords">
+          <strong>Topics you may need help with:</strong>
+          GitHub Pages, deployment, GitHub Actions, workflow, static hosting, public URL
+        </p>
+      </aside>
+      <p>
+        This is the exciting part — you're going to publish your site to the
+        actual internet! Anyone with the link will be able to see it.
+      </p>
+      <p>
+        Copy the text block below and paste it into a new chat with your
+        GitHub Copilot assistant, in "Ask Mode". You can access your Copilot
+        at <a href="https://github.com/copilot" target="_blank" rel="noopener noreferrer">github.com/copilot</a>.
+      </p>
+      <div class="code-block">
+        <button class="copy-btn" type="button" aria-label="Copy to clipboard">Copy</button>
+        <pre><code>I am following along with a tutorial on a website I found. The repo for the site can be found at https://github.com/Davis-B-Allen/sddhello and the page with the tutorial is found in the site/ folder. I am about to start step 7 and I would like you to advise me if I get stuck or need help. So I'd like you to read the tutorial in full, and step 7 in particular, and await any questions I might have. Can you please do that?</code></pre>
+      </div>
+      <p>
+        <strong>GitHub Pages</strong> is a free hosting service from GitHub
+        that takes the files in your repository and publishes them as a
+        website. It's perfect for static sites like this one — no server
+        setup, no monthly fees, just your code turned into a live webpage.
+      </p>
+      <p>
+        The magic behind it is <strong>GitHub Actions</strong> — an automation
+        system that can run tasks whenever something happens in your
+        repository (like pushing new code). Your fork already includes a
+        workflow file that knows how to build and deploy the site. You just
+        need to flip a few switches to turn it on:
+      </p>
       <ol>
         <li>
-          <strong>Create a GitHub account</strong>
-          <p>
-            GitHub is a platform where developers store and collaborate on code.
-            You'll need a free account to access the project and use the tools
-            described on this page. If you already have an account, skip ahead
-            to step 2.
-          </p>
-          <p>
-            <a href="https://github.com/signup" target="_blank" rel="noopener noreferrer">
-              Sign up for GitHub →
-            </a>
-          </p>
+          In your fork on GitHub, go to the <strong>Actions</strong> tab.
+          If prompted, click
+          <strong>"I understand my workflows, go ahead and enable them"</strong>.
         </li>
-
         <li>
-          <strong>Sign up for the GitHub Copilot Pro free trial</strong>
-          <p>
-            Copilot Pro gives you access to the AI assistant that will help you
-            write code and learn as you go. GitHub offers a free 30-day trial,
-            so you can get started without any cost. You'll need your GitHub
-            account from step 1.
-          </p>
-          <p>
-            <a href="https://github.com/github-copilot/signup" target="_blank" rel="noopener noreferrer">
-              Start your free Copilot Pro trial →
-            </a>
-          </p>
+          Go to <strong>Settings → Pages</strong> (in the left sidebar under
+          "Code and automation").
         </li>
-
         <li>
-          <strong>Fork the repository</strong>
-          <p>
-            "Forking" means creating your own personal copy of the project on
-            GitHub. This gives you a safe space to experiment and make changes
-            without affecting the original. Visit the project's repository page
-            on GitHub and click the <strong>Fork</strong> button near the top
-            right of the page. Follow the prompts to create your fork.
-          </p>
-          <p>
-            <a href="https://github.com/Davis-B-Allen/sddhello" target="_blank" rel="noopener noreferrer">
-              Go to the repository on GitHub →
-            </a>
-          </p>
+          Under <strong>Build and deployment</strong>, set
+          <strong>Source</strong> to <strong>GitHub Actions</strong>.
         </li>
-
         <li>
-          <strong>Open your fork in GitHub Codespaces</strong>
-          <p>
-            Now it's time to open your development environment. Go to
-            <em>your fork</em> of the repository on GitHub (not the original).
-            Click the green <strong>&lt;&gt; Code</strong> button, select the
-            <strong>Codespaces</strong> tab, and click
-            <strong>Create codespace on main</strong>. After a minute or two,
-            a fully configured editor will open in your browser — you're ready
-            to start building!
-          </p>
-        </li>
-
-        <li>
-          <strong>Preview the site locally</strong>
-          <p>
-            Let's make sure the site works before you change anything. Open the
-            terminal in VS Code
-            (<strong>Terminal → New Terminal</strong>, or press
-            <code>Ctrl+`</code>) and run:
-          </p>
-          <pre><code>npx serve site -p 8080</code></pre>
-          <p>
-            In a Codespace, a notification will pop up saying
-            <em>"Your application running on port 8080 is available."</em>
-            Click <strong>Open in Browser</strong> to see the site. You can also
-            open the <strong>Ports</strong> panel (in the bottom bar) and click
-            the globe icon next to port 8080.
-          </p>
-          <p>
-            <em>
-              <strong>Note:</strong> If you're developing locally (not in a
-              Codespace), open
-              <a href="http://localhost:8080" target="_blank" rel="noopener noreferrer">http://localhost:8080</a>
-              directly in your browser after running the serve command.
-            </em>
-          </p>
-        </li>
-
-        <li>
-          <strong>Publish your site with GitHub Pages</strong>
-          <p>
-            Your fork already includes a workflow file that can publish the site
-            to the web automatically. You just need to enable it:
-          </p>
-          <ol>
-            <li>
-              In your fork on GitHub, go to the <strong>Actions</strong> tab.
-              If prompted, click
-              <strong>"I understand my workflows, go ahead and enable them"</strong>.
-            </li>
-            <li>
-              Go to <strong>Settings → Pages</strong> (in the left sidebar under
-              "Code and automation").
-            </li>
-            <li>
-              Under <strong>Build and deployment</strong>, set
-              <strong>Source</strong> to <strong>GitHub Actions</strong>.
-            </li>
-            <li>
-              Push a commit to <code>main</code> (or click
-              <strong>"Run workflow"</strong> on the Actions tab) to trigger
-              deployment.
-            </li>
-          </ol>
-          <p>
-            After a few minutes, your site will be live at
-            <code>https://&lt;your-username&gt;.github.io/&lt;your-repo&gt;/</code>.
-          </p>
+          Push a commit to <code>main</code> (or click
+          <strong>"Run workflow"</strong> on the Actions tab) to trigger
+          deployment.
         </li>
       </ol>
+      <p>
+        After a few minutes, your site will be live at
+        <code>https://&lt;your-username&gt;.github.io/&lt;your-repo&gt;/</code>.
+        How cool is that? You just published a real website!
+      </p>
     </section>
 
     <section id="next-steps">
