@@ -54,12 +54,16 @@ Go to *your fork* of the repository on GitHub (not the original). Click the gree
 Open the terminal in VS Code (**Terminal → New Terminal**, or press `` Ctrl+` ``) and run:
 
 ```sh
-npx serve site -p 8080
+browser-sync start --server site --port 8080 --no-open --no-notify --no-ui --watch
 ```
+
+This starts a local development server with **live reload** — any changes you save to files in the `site/` folder will automatically refresh in your browser.
 
 In a Codespace, a notification will pop up saying *"Your application running on port 8080 is available."* Click **Open in Browser** to see the site. You can also open the **Ports** panel (in the bottom bar) and click the globe icon next to port 8080.
 
 > **Note:** If you're developing locally (not in a Codespace), open `http://localhost:8080` directly in your browser after running the serve command.
+
+When you're done, press `Ctrl+C` in the terminal to stop the server.
 
 ### 6. Publish your site with GitHub Pages
 
