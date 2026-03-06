@@ -236,6 +236,23 @@ pre {
   color: var(--color-muted);
 }
 
+/* ── Breadcrumb Navigation ── */
+.breadcrumb {
+  padding: var(--space-md);
+  font-size: 0.9rem;
+}
+
+.breadcrumb a {
+  color: var(--color-muted);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover,
+.breadcrumb a:focus {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
 /* ── Responsive: Tablets and Up ── */
 @media (min-width: 768px) {
   header,
@@ -271,5 +288,13 @@ pre {
 
   section {
     margin-bottom: calc(var(--space-xl) * 1.25);
+  }
+
+  .breadcrumb {
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
   }
 }
