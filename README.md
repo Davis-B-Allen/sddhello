@@ -2,7 +2,7 @@
 
 A practical, hands-on guide to building software with an AI at your side.
 
-**[View the live site →](https://davis-b-allen.github.io/sddhello/)**
+**[View the live site →](https://davis-b-allen.github.io/ai-illustrated-primer/)**
 
 ## What is this?
 
@@ -43,7 +43,7 @@ Copilot Pro gives you access to the AI assistant that will help you write code a
 
 "Forking" means creating your own personal copy of the project on GitHub. This gives you a safe space to experiment and make changes without affecting the original. Visit the project's repository page on GitHub and click the **Fork** button near the top right of the page.
 
-[Go to the repository on GitHub →](https://github.com/Davis-B-Allen/sddhello)
+[Go to the repository on GitHub →](https://github.com/Davis-B-Allen/ai-illustrated-primer)
 
 ### 4. Open your fork in GitHub Codespaces
 
@@ -78,7 +78,7 @@ After a few minutes, your site will be live at `https://<your-username>.github.i
 
 ## Next Steps
 
-Now that you have your development environment running, it's time to build something! A great first feature is to expand the site with individual concept pages. Visit the [live site](https://davis-b-allen.github.io/sddhello/) for a suggested first feature prompt you can paste directly into your AI agent's chat.
+Now that you have your development environment running, it's time to build something! A great first feature is to expand the site with individual concept pages. Visit the [live site](https://davis-b-allen.github.io/ai-illustrated-primer/) for a suggested first feature prompt you can paste directly into your AI agent's chat.
 
 You'll use spec-kit slash commands to guide the process:
 
