@@ -10,6 +10,14 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "npm install -g browser-sync@3.0.4 && echo \"alias liveserve='browser-sync start --server site --port 8080 --no-open --no-notify --no-ui --watch'\" >> ~/.bash_aliases",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"github.copilot",
+				"GitHub.copilot-chat"
+			]
+		}
+	},
 
 	// Configure tool-specific properties.
 	// "customizations": {},
